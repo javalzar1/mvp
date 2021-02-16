@@ -1,0 +1,25 @@
+[
+   {
+     "id": 5,
+     "location": "Yellowstone, Wyoming"
+
+   },
+   {
+     "id": 4,
+     "location": "Cape Town, South Africa"
+
+   },
+   {
+     "id": 3,
+     "location": "Trolltunga, Norway"
+
+   },
+   {
+    "id": 2,
+    "location": "Torres del Paine, Chile"
+   },
+   {
+    "id": 1,
+    "location": "Kakadu, Australia"
+   }
+]

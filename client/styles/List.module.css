@@ -1,0 +1,9 @@
+.list {
+  font-size: 50px;
+  padding-bottom: 10px
+
+}
+.list:hover {
+  background-color: #eee;
+  cursor: pointer;
+}

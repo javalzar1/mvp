@@ -25,7 +25,6 @@ module.exports = {
           }
         }]
       },
-      // rules for css modules
       {
         test: /\.css$/i,
         exclude: /node_modules/,
