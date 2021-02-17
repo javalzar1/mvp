@@ -1,14 +1,5 @@
 const Trip = require('../models/trips.js');
 
-// const findAndUpdate = () => {
-//   // return trip.findOneAndUpdate({email: email}, {
-//   //   firstName: firstName,
-//   //   lastName: lastName,
-//   //   email: email,
-//   //   guests: guests
-//   // }, {upsert: true, new: true}).exec();
-// };
-
 const createOne = (data, cb) => {
   const {
     location,
@@ -46,4 +37,13 @@ const createOne = (data, cb) => {
   })
 }
 
-module.exports = createOne;
+const getAll = (cb) => {
+  Trip.find({})
+    .then(result => cb(null, result))
+    .catch(err => cb(err, null));
+}
+
+module.exports = {
+  createOne,
+  getAll
+};

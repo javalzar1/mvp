@@ -4,7 +4,6 @@ import Plan from './Plan.jsx'
 import CreateTrip from './CreateTrip.jsx'
 import Suggestions from './Suggestions.jsx'
 import styles from '../../styles/App.module.css'
-import data from './dummyData.json';
 
 class App extends React.Component {
   constructor(props) {
@@ -18,10 +17,14 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({
-      list: data,
-      loading: false
-    })
+    fetch('/trips')
+    .then(response => response.json())
+    .then(data => {
+      this.setState({
+        list: data,
+        loading: false
+      })
+    });
   }
 
   handleLocationView() {
