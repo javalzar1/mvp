@@ -10,6 +10,7 @@ const LocationList = ({ list, locationClick }) => (
         <ListItem
           item={item}
           locationClick={locationClick}
+          index={index}
         />
       </li>
       ))}

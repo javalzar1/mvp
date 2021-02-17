@@ -6,14 +6,26 @@ ul {
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
+  box-shadow: 0 8px 6px -6px black;
 }
 .flex_container {
   display: flex;
+  padding-right: 30px;
 }
-
 .flex-container > li {
   margin: 0 5px;
 }
 li {
+  padding-top: 10px;
   padding-left: 20px;
+}
+li:hover {
+  text-shadow: 1px 1px rgb(205, 205, 205);
+  cursor: pointer;
+}
+img {
+  height: auto;
+  width: auto;
+  max-width: 100px;
+  max-height: 100px;
 }

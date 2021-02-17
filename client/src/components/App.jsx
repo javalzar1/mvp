@@ -10,8 +10,11 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      list: []
+      list: [],
+      locationsView: false,
+      createView: false
     }
+    this.handleLocationView = this.handleLocationView.bind(this);
   }
 
   componentDidMount() {
@@ -21,8 +24,14 @@ class App extends React.Component {
     })
   }
 
+  handleLocationView() {
+    this.setState({
+      locationsView: !this.state.handleLocationView
+    })
+  }
+
   render() {
-    const { list } = this.state;
+    const { list, locationsView } = this.state;
     return (
       <div className={styles.container}>
         <div className={styles.nav}>
@@ -31,14 +40,19 @@ class App extends React.Component {
         <div className={styles.plan}>
           <Plan
             list={list}
+            handleLocationView={this.handleLocationView}
           />
         </div>
-        <div className={styles.bucket}>
-          <CreateTrip />
-        </div>
-        <div className={styles.suggestions}>
-          <Suggestions />
-        </div>
+        {locationsView ? null :
+        <>
+          <div className={styles.bucket}>
+            <CreateTrip />
+          </div>
+          <div className={styles.suggestions}>
+            <Suggestions />
+          </div>
+        </>
+        }
       </div>
     )
   }

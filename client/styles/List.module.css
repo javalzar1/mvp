@@ -4,6 +4,9 @@
 
 }
 .list:hover {
-  background-color: #eee;
+  background-color: rgba(238, 238, 238, 0.427);
+  box-shadow: 0 0 15px 10px rgba(238, 238, 238, 0.427);
+  -webkit-text-stroke-width: 1px;
+  border-radius: 25px;
   cursor: pointer;
 }

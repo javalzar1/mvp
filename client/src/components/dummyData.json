@@ -1,25 +1,50 @@
 [
-   {
-     "id": 5,
-     "location": "Yellowstone, Wyoming"
-
-   },
-   {
-     "id": 4,
-     "location": "Cape Town, South Africa"
-
-   },
-   {
-     "id": 3,
-     "location": "Trolltunga, Norway"
-
-   },
-   {
-    "id": 2,
-    "location": "Torres del Paine, Chile"
-   },
-   {
+  {
     "id": 1,
-    "location": "Kakadu, Australia"
-   }
+    "location": "Kakadu, Australia",
+    "flightInfo": [],
+    "drive": false,
+    "itenarary": [],
+    "packingList": []
+  },
+  {
+    "id": 2,
+    "location": "Torres del Paine, Chile",
+    "flightInfo": [],
+    "drive": false,
+    "budget": 0,
+    "itenarary": [],
+    "packingList": []
+  },
+  {
+    "id": 3,
+    "location": "Trolltunga, Norway",
+    "flightInfo": [],
+    "drive": false,
+    "budget": 0,
+    "itenarary": [],
+    "packingList": []
+
+  },
+  {
+    "itenarary": [],
+    "id": 4,
+    "location": "Cape Town, South Africa",
+    "flightInfo": [],
+    "drive": false,
+    "budget": 0,
+    "packingList": []
+
+  },
+  {
+    "id": 5,
+    "location": "Yellowstone, Wyoming",
+    "flight": false,
+    "flightInfo": [],
+    "drive": false,
+    "budget": 0,
+    "itenarary": [],
+    "packingList": []
+
+  }
 ]
