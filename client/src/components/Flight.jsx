@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 import Stops from './Stops.jsx'
+import StopNotes from './StopNotes.jsx'
 import styles from '../../styles/Flight.module.css'
 import moment from 'moment'
 
-const Flight = ({ data }) => (
+const Flight = ({ data, list, id }) => (
   <div>
     <div className={styles.locations}>
       {data.origin}
@@ -21,8 +22,16 @@ const Flight = ({ data }) => (
         {' Flight Time: '}
         {data.totalTime}
       </div>
+      <div className={styles.space}>
+        {'Ticket Price: $ '} {data.price}
+      </div>
     </div>
-    <Stops />
+    <Stops data={data} />
+    {data.notes ?
+      <p>data.notes</p> :
+      <StopNotes list={list} id={id} />
+    }
+
   </div>
 )
 

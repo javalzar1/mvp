@@ -25,7 +25,6 @@ class App extends React.Component {
   }
 
   handleLocationView() {
-    console.log('fired')
     this.setState({
       locationsView: !this.state.locationsView
     })

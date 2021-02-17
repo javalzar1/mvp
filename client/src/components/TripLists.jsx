@@ -17,7 +17,7 @@ const TripLists = ({ list, locID, locationClick }) => {
             Flight Info/Road Info
           </div>
           <br />
-          <Flight data={info.flightInfo}/>
+          <Flight data={info.flightInfo} list={list} id={locID} />
         </div>
         <div>
           <div className={styles.title}>

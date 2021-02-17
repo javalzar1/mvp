@@ -85,7 +85,7 @@
       "arrivalTime": "17:00",
       "totalTime": "8 hours",
       "stops" : [
-               "DFW",
+        "DFW",
         "MIA",
         "AMS"
       ],
@@ -113,7 +113,6 @@
     ]
   },
   {
-    "itenarary": [],
     "id": 4,
     "location": "Cape Town, South Africa",
     "flightInfo": {
@@ -124,7 +123,7 @@
       "arrivalTime": "17:00",
       "totalTime": "8 hours",
       "stops" : [
-               "DFW",
+        "DFW",
         "MIA",
         "AMS"
       ],
@@ -132,6 +131,7 @@
     },
     "drive": false,
     "budget": 0,
+    "itenarary": [],
     "packingList": [
       "blue jeans",
       "undergarments",
@@ -162,7 +162,7 @@
       "arrivalTime": "17:00",
       "totalTime": "8 hours",
       "stops" : [
-               "DFW",
+        "DFW",
         "MIA",
         "AMS"
       ],
