@@ -2,49 +2,191 @@
   {
     "id": 1,
     "location": "Kakadu, Australia",
-    "flightInfo": [],
+    "flightInfo": {
+      "airline": "American Airlines",
+      "origin": "LAX",
+      "destination": "DRW",
+      "departureTime": "09:00",
+      "arrivalTime": "17:00",
+      "totalTime": "8 hours",
+      "stops" : [
+        "DFW",
+        "MIA",
+        "AMS"
+      ],
+      "price": "2199.99"
+    },
     "drive": false,
     "itenarary": [],
-    "packingList": []
+    "packingList": [
+      "blue jeans",
+      "undergarments",
+      "socks",
+      "shirts",
+      "shorts",
+      "rain jacket",
+      "toiletry bag",
+      "camera bag",
+      "daypack",
+      "hiking boots",
+      "treeking poles",
+      "phone charger",
+      "passport",
+      "id",
+      "credit cards"
+    ]
   },
   {
     "id": 2,
     "location": "Torres del Paine, Chile",
-    "flightInfo": [],
+    "flightInfo": {
+      "airline": "United",
+      "origin": "LAX",
+      "destination": "PNT",
+      "departureTime": "09:00",
+      "arrivalTime": "17:00",
+      "totalTime": "8 hours",
+      "stops" : [
+        "DFW",
+        "MIA",
+        "AMS"
+      ],
+      "price": "699.99"
+    },
     "drive": false,
     "budget": 0,
     "itenarary": [],
-    "packingList": []
+    "packingList": [
+      "blue jeans",
+      "undergarments",
+      "socks",
+      "shirts",
+      "shorts",
+      "rain jacket",
+      "toiletry bag",
+      "camera bag",
+      "daypack",
+      "hiking boots",
+      "treeking poles",
+      "phone charger",
+      "passport",
+      "id",
+      "credit cards"
+    ]
   },
   {
     "id": 3,
     "location": "Trolltunga, Norway",
-    "flightInfo": [],
+    "flightInfo": {
+      "airline": "American Airlines",
+      "origin": "LAX",
+      "destination": "OSL",
+      "departureTime": "09:00",
+      "arrivalTime": "17:00",
+      "totalTime": "8 hours",
+      "stops" : [
+               "DFW",
+        "MIA",
+        "AMS"
+      ],
+      "price": "99.99"
+    },
     "drive": false,
     "budget": 0,
     "itenarary": [],
-    "packingList": []
-
+    "packingList": [
+      "blue jeans",
+      "undergarments",
+      "socks",
+      "shirts",
+      "shorts",
+      "rain jacket",
+      "toiletry bag",
+      "camera bag",
+      "daypack",
+      "hiking boots",
+      "treeking poles",
+      "phone charger",
+      "passport",
+      "id",
+      "credit cards"
+    ]
   },
   {
     "itenarary": [],
     "id": 4,
     "location": "Cape Town, South Africa",
-    "flightInfo": [],
+    "flightInfo": {
+      "airline": "American Airlines",
+      "origin": "LAX",
+      "destination": "CPT",
+      "departureTime": "09:00",
+      "arrivalTime": "17:00",
+      "totalTime": "8 hours",
+      "stops" : [
+               "DFW",
+        "MIA",
+        "AMS"
+      ],
+      "price": "699.99"
+    },
     "drive": false,
     "budget": 0,
-    "packingList": []
-
+    "packingList": [
+      "blue jeans",
+      "undergarments",
+      "socks",
+      "shirts",
+      "shorts",
+      "rain jacket",
+      "toiletry bag",
+      "camera bag",
+      "daypack",
+      "hiking boots",
+      "treeking poles",
+      "phone charger",
+      "passport",
+      "id",
+      "credit cards"
+    ]
   },
   {
     "id": 5,
     "location": "Yellowstone, Wyoming",
     "flight": false,
-    "flightInfo": [],
+    "flightInfo": {
+      "airline": "Delta",
+      "origin": "LAX",
+      "destination": "SLC",
+      "departureTime": "09:00",
+      "arrivalTime": "17:00",
+      "totalTime": "8 hours",
+      "stops" : [
+               "DFW",
+        "MIA",
+        "AMS"
+      ],
+      "price": "148.99"
+    },
     "drive": false,
     "budget": 0,
     "itenarary": [],
-    "packingList": []
-
+    "packingList": [
+      "blue jeans",
+      "undergarments",
+      "socks",
+      "shirts",
+      "shorts",
+      "rain jacket",
+      "toiletry bag",
+      "camera bag",
+      "daypack",
+      "hiking boots",
+      "treeking poles",
+      "phone charger",
+      "passport",
+      "id",
+      "credit cards"
+    ]
   }
 ]

@@ -1,13 +1,35 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import Flight from './Flight.jsx'
 import styles from '../../styles/TripLists.module.css'
 
-const TripLists = ({ list, locID }) => {
-  const index = locID;
+const TripLists = ({ list, locID, locationClick }) => {
+  const info = list[locID];
   return(
-    <div className={styles.main}>
-      {console.log(index, list[index])}
-      test
+    <div>
+      <button onClick={() => locationClick()}>{'<'}</button>
+      <div className={styles.main}>
+        <div className={styles.location}>
+          {info.location}
+        </div>
+        <div>
+          <div className={styles.title}>
+            Flight Info/Road Info
+          </div>
+          <br />
+          <Flight data={info.flightInfo}/>
+        </div>
+        <div>
+          <div className={styles.title}>
+            Itenarary
+          </div>
+        </div>
+        <div>
+          <div className={styles.title}>
+            Packing List
+          </div>
+        </div>
+      </div>
     </div>
   )
 };

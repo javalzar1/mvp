@@ -2,8 +2,9 @@
 import React from 'react'
 import ListItem from './ListItem.jsx'
 
-const LocationList = ({ list, locationClick }) => (
+const LocationList = ({ list, locationClick, home}) => (
   <div>
+    <button onClick={() => home()}>{'<'}</button>
     <ul>
       {list.map((item, index) => (
       <li key={index}>

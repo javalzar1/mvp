@@ -1,3 +1,22 @@
 .main{
-  background: #eee;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.location {
+  grid-column: 1 / 4;
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+button {
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+.title {
+  font-size: 25px;
+  font-weight: 300;
+  text-decoration: underline;
 }

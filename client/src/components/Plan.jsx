@@ -14,6 +14,7 @@ class Plan extends React.Component {
     };
     this.handleCreateClick = this.handleCreateClick.bind(this);
     this.handleLocationClick = this.handleLocationClick.bind(this);
+    this.home = this.home.bind(this);
   }
 
   handleCreateClick() {
@@ -27,6 +28,13 @@ class Plan extends React.Component {
     this.setState({
       locID: index,
       displayLists: !this.state.displayLists,
+    })
+  }
+
+  home() {
+    this.props.handleLocationView()
+    this.setState({
+      displayLocations: false,
     })
   }
 
@@ -55,6 +63,7 @@ class Plan extends React.Component {
         return <LocationList
           list={list}
           locationClick={this.handleLocationClick}
+          home={this.home}
         />
       } else if (displayLocations === false && displayLists === false) {
         return currentLocations;
@@ -63,6 +72,7 @@ class Plan extends React.Component {
           list={list}
           locID={locID}
           className={styles.trip}
+          locationClick={this.handleLocationClick}
         />
       }
     }

@@ -25,34 +25,37 @@ class App extends React.Component {
   }
 
   handleLocationView() {
+    console.log('fired')
     this.setState({
-      locationsView: !this.state.handleLocationView
+      locationsView: !this.state.locationsView
     })
   }
 
   render() {
     const { list, locationsView } = this.state;
     return (
-      <div className={styles.container}>
+      <div>
         <div className={styles.nav}>
           <Nav />
         </div>
-        <div className={styles.plan}>
-          <Plan
-            list={list}
-            handleLocationView={this.handleLocationView}
-          />
+        <div className={styles.container}>
+          <div className={locationsView ? styles.plan2 : styles.plan}>
+            <Plan
+              list={list}
+              handleLocationView={this.handleLocationView}
+            />
+          </div>
+          {locationsView ? null :
+          <>
+            <div className={styles.bucket}>
+              <CreateTrip />
+            </div>
+            <div className={styles.suggestions}>
+              <Suggestions />
+            </div>
+          </>
+          }
         </div>
-        {locationsView ? null :
-        <>
-          <div className={styles.bucket}>
-            <CreateTrip />
-          </div>
-          <div className={styles.suggestions}>
-            <Suggestions />
-          </div>
-        </>
-        }
       </div>
     )
   }
